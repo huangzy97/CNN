@@ -4,7 +4,7 @@ Created on Thu May 30 19:40:25 2019
 @author: sbtithzy
 """
 # 卷积神经网络 
-# part 1,
+# part 1
 from  keras.layers  import Convolution2D
 from  keras.models import Sequential
 from  keras.layers import MaxPool2D
@@ -18,8 +18,8 @@ classifier.add(Convolution2D(32,3,3,activation = 'relu',input_shape = (64,64,3))
 classifier.add(MaxPool2D(pool_size = (2,2)))
 # =============================================================================
 # ###添加卷积层
-# classifier.add(Convolution2D(32,3,3,activation = 'relu'))
-# classifier.add(MaxPool2D(pool_size = (2,2)))
+classifier.add(Convolution2D(32,3,3,activation = 'relu'))
+classifier.add(MaxPool2D(pool_size = (2,2)))
 # =============================================================================
 
 # 添加扁平层
