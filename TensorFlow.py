@@ -54,7 +54,7 @@ sess.run(init)
 fig = plt.figure()
 ax = fig.add_subplot(1,1,1)
 ax.scatter(X_data,Y_data)
-plt.ion()
+plt.ion()#保留图片
 plt.show()
 for  i in range(1000):
     sess.run(train,feed_dict={x:X_data,y:Y_data})
@@ -68,11 +68,3 @@ for  i in range(1000):
         plt.pause(0.1)
         print(i,sess.run(loss,feed_dict={x:X_data,y:Y_data}))
 plt.savefig(r'D:\dm\tf\pict.png')
-
-
-
-
-
-
-
-
