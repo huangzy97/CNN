@@ -30,7 +30,7 @@ classifier.add(Dense(output_dim = 128,activation = 'relu'))
 classifier.add(Dense(output_dim = 1,activation = 'sigmoid'))
 #  编译Cnn
 classifier.compile(optimizer = 'adam',loss = 'binary_crossentropy' ,metrics = ['accuracy'])
-
+ 
 # part2 输入图片预处理
 from keras.preprocessing.image import ImageDataGenerator
 train_datagen = ImageDataGenerator(rescale=1./255,
