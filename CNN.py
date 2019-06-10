@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """
+huangzy97
 Created on Thu May 30 19:40:25 2019
-@author: sbtithzy
+@author: huangzy97
 """
 # 卷积神经网络 
 # part 1
