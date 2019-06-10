@@ -49,7 +49,7 @@ init = tf.initialize_all_variables()
 # def Session
 sess = tf.Session()
 sess.run(init)
-#
+# 
 fig = plt.figure()
 ax = fig.add_subplot(1,1,1)
 ax.scatter(X_data,Y_data)
